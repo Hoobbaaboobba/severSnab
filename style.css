@@ -132,7 +132,7 @@ body
     background-position: center;
     background-size: 18px;
     height: 32px;
-    width: 25px;
+    width: 18px;
     background-repeat: no-repeat;
     transition: .3s;
 }
@@ -163,8 +163,6 @@ body
     background-repeat: no-repeat;
 }
 
-/* Search Container */
-
 .search-container.hide {
     opacity: 0;
     pointer-events: none;
@@ -190,6 +188,7 @@ body
 
 .search-container .link-search {
     position: absolute;
+    background-color: transparent;
     top: 8px;
     left: 0px;
     opacity: 1;
@@ -236,8 +235,6 @@ body
     overflow: hidden;
 }
 
-/* Quick Links */
-
 .search-container .quick-links {
     background: #fff;
     position: absolute;
@@ -275,7 +272,6 @@ body
     color: #2997ff;
 }
 
-/* Desktop Nav Animation */
 
 .nav_buttons li {
     transition: all 400ms ease;
@@ -287,13 +283,9 @@ body
     pointer-events: none;
 }
 
-/* Overlay Animation */
-
 .overlay {
     transition: all 400ms ease;
 }
-
-/* Navigation Menu Items Transition Delay */
 
 .nav_buttons li:nth-of-type(1),
 .nav_buttons.hide li:nth-of-type(10) {
@@ -731,13 +723,14 @@ body
 
 .footer
 {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: black;
-    padding: 30px;
+    padding: 30px 0 60px;
 }
 
 .footer_container
@@ -796,6 +789,179 @@ body
     color: white;
 }
 
+.underfooter
+{
+    padding: 40px 0 40px;
+}
+
+.underfooter_container
+{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(235, 235, 235);
+    padding: 30px 30px;
+    width: 1000px;
+}
+
+.right_underfooter
+{
+    display: flex;
+
+}
+
+.container_first
+{
+    display: flex;
+    gap: 20px;
+}
+
+.left_project_photo img
+{
+    width: 585px;
+    height: 438px;
+}
+
+.right_projects_photos 
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right_projects_photos img
+{
+    width: 280px;
+    height: 205px;
+}
+
+.container_second img
+{
+    width: 280px;
+    height: 205px;
+}
+
+.container_second
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+    margin-top: 20px;
+}
+
+.our_projects h2
+{
+    margin-bottom: 40px;
+}
+
+.our_projects
+{
+    background: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0 70px 0;
+}
+
+.yandex_reviews
+{
+    margin-top: 30px;
+    height: 450px;
+}
+
+.rbd-core-ui
+{
+    margin-top: 40px;
+}
+
+.rbd-review-slider .rbd-preloader {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+.rbd-review-slider .rbd-review.rbd-prev {
+  transform: translate3d(-100px, 0, -50px);
+  display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-next {
+  transform: translate3d(100px, 0, -50px);
+  display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-curr {
+  z-index: 10;
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+  display: inline-block;
+}
+
+.rbd-review-slider .rbd-review {
+  padding: 20px 30px;
+  font-size: 18px;
+  line-height: 1.612;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.5);
+  display: none;
+  vertical-align: top;
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: 0;
+  background: #fff;
+  max-width: 600px;
+}
+
+.rbd-review-slider .rbd-review.rbd-first {
+  display: block;
+}
+
+.rbd-review-slider .rbd-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.rbd-review-slider svg {
+  fill: #ffbb58;
+  width: 24px;
+  margin-right: 1px;
+}
+
+.rbd-review-slider .rbd-review-meta {
+  font-size: 12px;
+  color: #565656;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.rbd-review-slider .rbd-gravatar {
+  border-radius: 100%;
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+  border: 6px solid transparent;
+  box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.35);
+}
+
+.rbd-footing {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
 
 @media (max-width: 1280px)
 {
